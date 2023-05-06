@@ -1,2 +1,3 @@
-# Major-Project---Retinal-OCT
-Retina Disease Diagnosis using Retinal OCT images
+# BackgroundRemoval
+
+Upload an image and adjust the settings to remove the background for any image!

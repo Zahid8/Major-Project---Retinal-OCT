@@ -19,7 +19,6 @@ from PIL import Image as im
 from tensorflow.keras.utils import normalize
 import random
 from streamlit_image_comparison import image_comparison
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 st.set_page_config(layout="wide", page_title="Retinal disease diagnoser")
 #st.set_page_config("Webb Space Telescope vs Original OCT Telescope", "🔭")
@@ -173,13 +172,6 @@ st.header("OCT image preprocessing steps")
 st.write("")
 "Optical coherence tomography (OCT) is a noninvasive imaging method that uses reflected light to create pictures of the Retina. It can be used for early detection of various eye diseases"
 st.write("")
-
-
-orig_path = '/home/crossfire/Programming projects/OCT/saves1/orig/'+str(random_num)+'.png'
-seg_path = '/home/crossfire/Programming projects/OCT/saves1/segment/'+str(random_num)+'.png'
-den_path = '/home/crossfire/Programming projects/OCT/saves1/denoise/'+str(random_num)+'.png'
-thresh_path = '/home/crossfire/Programming projects/OCT/saves1/thresh/'+str(random_num)+'.png'
-
 
 col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
